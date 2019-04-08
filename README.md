@@ -11,6 +11,7 @@ The Code Folder contains two notebooks:
 
 Main notebook (MusicMood_SongClassification) that has been used to implement the model (MLP) for the web app
 Secondary notebook (Implementing Multiple Classifiers) that contains implementation of other models such as SVM, RF, Bagging, Boosting etc.
+
 The Data folder contains the following contents:
 
 train_lyrics_1000 which is the training data
