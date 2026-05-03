@@ -1,29 +1,67 @@
-# Music-Mood-Prediction-Sentiment-Analysis
-App hosted on Heroku (Link) : https://mood-prediction.herokuapp.com/
+# 🎵 Music Mood Prediction (Sentiment Analysis)
 
-Documentation Link: https://codelabs-preview.appspot.com/?file_id=1guBB6MdRZQEfGpmeTlHPv2Z4a1uChJaGpvSrs7uUKU4#6
+This project is a **machine learning-based web application** that predicts the **mood of a song (Happy or Sad)** based on its lyrics.
 
-Youtube Video Link: https://youtu.be/jPBI4o8b-Gc
+It leverages **Natural Language Processing (NLP)** and **classification models** to analyze text input and determine sentiment, with support for **Hindi (Devanagari) lyrics via translation**.
 
-The Model Development Phase:
+---
 
-The Code Folder contains two notebooks:
+## 🚀 Live Demo
 
-Main notebook (MusicMood_SongClassification) that has been used to implement the model (MLP) for the web app
-Secondary notebook (Implementing Multiple Classifiers) that contains implementation of other models such as SVM, RF, Bagging, Boosting etc.
+🌐 **App Hosted on Heroku**  
+https://mood-prediction.herokuapp.com/
 
-The Data folder contains the following contents:
+---
 
-train_lyrics_1000 which is the training data
-valid_lyrics_200 which is the validation data
-stopwords_eng which is a corpus of stopwords used by the model to remove stopwords from the training data
-The Model folder contains the pickled version of all the necessary components of the model used by the webapp
+## 📘 Documentation
 
-The Model Deployment Phase:
+📖 https://codelabs-preview.appspot.com/?file_id=1guBB6MdRZQEfGpmeTlHPv2Z4a1uChJaGpvSrs7uUKU4#6
 
-In the app.py code we have loaded the pickled model and all the other components, and the app.py will recieve the lyrics in Hindi(Nagri) format which will then be passed to the Google Translater and converted into English
-This converted text will then be passed to the model to predict if the song is sad or happy.
-Based on the output that we recieve in step 2, we will create a JSON object and return it.
-Once the index.html page is loaded, the user needs to enter the lyrics in the text area component and submit it.
-Once submitted, an AJAX call will be made to the API that we developed in Step 1 and will recieve the output as described in step 3
-This AJAX will then return the image output based on the condition if the song is happy or sad
+---
+
+## 🎥 Demo Video
+
+▶️ https://youtu.be/jPBI4o8b-Gc
+
+---
+
+## 🎯 Features
+
+- 🎤 Predict song mood: **Happy / Sad**
+- 🌐 Supports **Hindi lyrics** (auto-translated to English)
+- ⚡ Real-time prediction via web interface
+- 🧠 Multiple ML models experimented
+- 📊 NLP preprocessing pipeline
+
+---
+
+## 🛠️ Tech Stack
+
+- **Language:** Python  
+- **ML Models:** MLP, SVM, Random Forest, Bagging, Boosting  
+- **NLP:** Text preprocessing, stopword removal  
+- **Web Framework:** Flask  
+- **Frontend:** HTML, AJAX  
+- **Deployment:** Heroku  
+
+---
+
+## 🧠 Model Development
+
+The model development phase includes two main notebooks:
+
+### 📓 1. Main Notebook
+- `MusicMood_SongClassification`
+- Implements the **MLP (Multi-Layer Perceptron)** model used in production
+
+### 📓 2. Experimental Notebook
+- `Implementing Multiple Classifiers`
+- Includes:
+  - Support Vector Machine (SVM)
+  - Random Forest (RF)
+  - Bagging
+  - Boosting
+
+---
+
+## 📂 Project Structure
